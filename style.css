@@ -1903,3 +1903,470 @@ section {
     }
 
 }
+
+/* =====================================================
+   MOBILE RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    /* HEADER */
+
+    .site-header {
+        padding: 12px 0;
+    }
+
+    .nav-container {
+        min-height: 52px;
+    }
+
+    .brand-text {
+        font-size: 16px;
+    }
+
+    .brand-mark {
+        width: 38px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 12px;
+        right: 12px;
+        width: auto;
+        padding: 14px;
+        border-radius: 18px;
+        flex-direction: column;
+        gap: 4px;
+        z-index: 1000;
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-profile {
+        order: 2;
+    }
+
+    .eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(42px, 12vw, 58px);
+        line-height: 1.05;
+        margin: 14px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    .hero-company {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .hero-location {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.7;
+        max-width: 100%;
+        margin: 18px auto 0;
+    }
+
+    .hero-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .btn {
+        min-width: 130px;
+        text-align: center;
+    }
+
+    .profile-card {
+        width: min(100%, 330px);
+        margin: 0 auto;
+    }
+
+
+    /* SECTIONS */
+
+    section {
+        overflow: hidden;
+    }
+
+    .about-section,
+    .role-section,
+    .experience-section,
+    .expertise-section,
+    .achievements-section,
+    .statement-section,
+    .contact-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .about-highlight {
+        width: 100%;
+    }
+
+    .highlight-item {
+        padding: 18px;
+    }
+
+
+    /* CURRENT ROLE */
+
+    .role-card {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .role-badge {
+        margin: 0 auto;
+    }
+
+    .role-main h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .role-location {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .role-duration {
+        text-align: center;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-timeline {
+        gap: 35px;
+    }
+
+    .experience-item,
+    .experience-item.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .experience-visual {
+        min-height: 180px;
+    }
+
+    .experience-number {
+        font-size: 50px;
+    }
+
+    .experience-content {
+        text-align: center;
+    }
+
+    .experience-content h3 {
+        font-size: 24px;
+    }
+
+    .experience-content h4 {
+        font-size: 16px;
+    }
+
+    .experience-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .experience-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* EXPERTISE */
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .expertise-card {
+        padding: 25px 20px;
+    }
+
+    .expertise-card h3 {
+        font-size: 20px;
+    }
+
+    .expertise-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* AWARDS */
+
+    .awards-timeline {
+        gap: 45px;
+    }
+
+    .award-item,
+    .award-item.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .award-image-wrap {
+        width: 100%;
+    }
+
+    .award-image {
+        width: min(100%, 340px);
+        margin: 0 auto;
+    }
+
+    .award-content {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 22px;
+        text-align: center;
+    }
+
+    .award-content h3 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .award-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* STATEMENT */
+
+    .statement-card {
+        padding: 35px 22px;
+        text-align: center;
+    }
+
+    .statement-card h2 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .statement-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .contact-card {
+        padding: 20px;
+        min-width: 0;
+    }
+
+    .contact-card strong {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .site-footer p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 420px) {
+
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .brand-text {
+        font-size: 14px;
+    }
+
+    .brand-mark {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .role-main h2 {
+        font-size: 21px;
+    }
+
+    .experience-content h3 {
+        font-size: 21px;
+    }
+
+    .award-content h3 {
+        font-size: 20px;
+    }
+
+    .statement-card h2 {
+        font-size: 24px;
+    }
+
+}
+
+/* CONTACT ICONS */
+
+.whatsapp-icon svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: currentColor;
+}
+
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icici-icon {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
